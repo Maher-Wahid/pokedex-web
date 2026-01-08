@@ -30,7 +30,7 @@ Users can search for a Pokémon by name and view its sprite, type(s), and base s
 
 If a user enters an invalid Pokémon name, the app handles the API’s 404 response and displays a clear error message without breaking the UI.
 
-## Screenshot
+## Screenshots
 
 ### The Webpage
 
