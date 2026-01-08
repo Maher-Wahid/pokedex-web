@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mini Pokédex</title>
+  <link rel="stylesheet" href="./styles.css">
+  <link rel="icon" type="image/png" href="./icons/web-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div id="search-container">
+    <input id="search" type="text" placeholder="Enter a Pokémon's Name">
+    <button id="btn" onclick="getPokémon()"><img src="./icons/search-icon.png" alt="Button Image" class="btn-img"></button>
+
+    <div id="error-container">
+      <img src="./icons/error-icon.png" alt="Error Icon Image">
+      <div id="labels">
+        <span id="error-label">Error</span>
+        <span id="solution-label">That is not an actual Pokémon. Please try something like Bulbasaur or Eevee.</span>
+      </div>
+      <button id="error-btn">&#10005</button>
+    </div>
+  </div>
+  
+  <div class="main">
+    <div id="name-pic-container" style="background-color: #f7d02c;">
+      <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/25.png" alt="Pokémon Sprite" id="sprite">
+      <span id="name">Pikachu</span>
+      <div id="types">
+        <span id="type1">Electric</span>
+        <span id="type2" style="display: none"></span>
+      </div>
+    </div>
+
+    <div class="stats">
+      <div id="stats-key">
+        <span class="stat">HP</span>
+        <span class="stat">Speed</span>
+        <span class="stat">Attack</span>
+        <span class="stat">Defense</span>
+        <span class="stat">Special Attack</span>
+        <span class="stat">Special Defense</span>
+      </div>
+      <div id="stats-value">
+        <span class="stat" id="hp">35</span>
+        <span class="stat" id="speed">90</span>
+        <span class="stat" id="attack">55</span>
+        <span class="stat" id="defense">40</span>
+        <span class="stat" id="special-attack">50</span>
+        <span class="stat" id="special-defense">50</span>
+      </div>
+    </div>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+</html>
